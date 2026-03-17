@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ['latin'], weight: ['400', '500', '600', '700'], 
 
 export const metadata: Metadata = {
   title: 'NEFER Inc.',
-  description: 'Crafting Digital Experiences with Precision. Premium web development and UI/UX design services.',
+  description: 'Crafting Digital Experiences with Precision.',
   keywords: 'web development, UI/UX design, landing pages, web apps, freelance developer',
 }
 
@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${spaceGrotesk.variable} ${inter.variable}`}>
-      <body className="font-body antialiased bg-background text-foreground">{children}</body>
+      <body className="font-body bg-background text-foreground">{children}</body>
     </html>
   )
 }
