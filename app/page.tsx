@@ -62,8 +62,8 @@ export default function Home() {
         <section className="py-32 flex justify-center text-center">
           <div className="max-w-4xl">
             <p className={`${playfair.className} text-3xl md:text-5xl leading-[1.3] text-[#cde9da]`}>
-              <span className="text-[#6DAB8C]">Not just another website.</span><br />
-              NEFER exists to turn ideas into digital experiences that feel clear, distinctive, and alive.
+              <span className="text-[#6DAB8C]">Defying the ordinary.</span><br />
+              NEFER shapes ideas into digital artifacts-sharp, deliberate, and undeniably alive.
             </p>
           </div>
         </section>
@@ -71,7 +71,7 @@ export default function Home() {
         {/* Services Section */}
         <section className="py-24">
           <h2 className={`${playfair.className} text-3xl md:text-[48px] mb-12`}>
-            What I can build
+            What we can build
           </h2>
           
           <div className="flex flex-col border-t border-[#cde9da]/20">
