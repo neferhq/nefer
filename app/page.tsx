@@ -1,6 +1,6 @@
 import { Playfair_Display, Hanken_Grotesk } from 'next/font/google';
 import ShaderBackground from '@/components/ui/ShaderBackground';
-
+import Image from 'next/image';
 // Inisialisasi Fonts
 const playfair = Playfair_Display({ subsets: ['latin'], display: 'swap' });
 const hanken = Hanken_Grotesk({ subsets: ['latin'], display: 'swap' });
@@ -13,16 +13,29 @@ export default function Home() {
 
       {/* Konten Utama - Menggunakan grid & container sesuai DESIGN.md */}
       <div className="max-w-[1440px] mx-auto px-6 md:px-16 flex flex-col min-h-screen">
-        
         {/* Navbar */}
         <nav className="flex justify-between items-center py-8">
-          <div className="text-xl tracking-wide font-bold uppercase">Nefer</div>
+          <a href="/" className="block">
+            <div className="relative w-32 h-8 md:w-40 md:h-10 overflow-hidden"> 
+              <Image 
+                src="/top.svg" 
+                alt="Nefer Logo" 
+                fill
+                priority 
+                className="object-cover object-center" 
+              />
+            </div>
+          </a>
+
+          {/* Bagian Menu */}
           <div className="hidden md:flex gap-8 text-xs font-semibold tracking-[0.15em] uppercase">
             <a href="#" className="hover:text-white transition-colors">Work</a>
             <a href="#" className="hover:text-white transition-colors">Services</a>
             <a href="#" className="hover:text-white transition-colors">Process</a>
             <a href="#" className="hover:text-white transition-colors">About</a>
           </div>
+
+          {/* Bagian Tombol */}
           <button className="bg-[#057569] text-[#00170f] px-6 py-2 text-xs font-semibold tracking-[0.15em] uppercase rounded-none hover:bg-opacity-90 transition-all">
             Let's Talk
           </button>
@@ -107,7 +120,17 @@ export default function Home() {
         {/* Footer */}
         <footer className="py-12 flex flex-col md:flex-row justify-between items-center border-t border-[#cde9da]/20 mt-12">
           <div className="mb-6 md:mb-0">
-            <div className="text-xl tracking-wide font-bold uppercase mb-2">Nefer</div>
+            <a href="/" className="block">
+            <div className="relative w-32 h-8 md:w-40 md:h-10 overflow-hidden"> 
+              <Image 
+                src="/logo.svg" 
+                alt="Nefer Logo" 
+                fill
+                priority 
+                className="h-auto w-auto object-left object-contain" 
+              />
+            </div>
+          </a>
             <div className="text-xs text-[#c3c7c7]">&copy; <a href="https://nefer.id/" className="hover:text-white transition-colors">NFR</a>. All rights reserved.</div>
           </div>
           

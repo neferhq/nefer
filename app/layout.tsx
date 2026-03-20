@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: 'NEFER Inc.',
   description: 'Crafting Digital Experiences with Precision.',
   keywords: 'web development, UI/UX design, landing pages, web apps, freelance developer',
+  icons: {
+    icon: '/logo.svg',
+  },
 }
 
 export const viewport: Viewport = {
